@@ -42,7 +42,7 @@ body {
     width: 100%;
     z-index: 2;
 }
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
 .sticky + .content {
     padding-top: 102px;
 }
@@ -142,3 +142,31 @@ body {
 
 /*===================================================================ABOUT_SECTION=================================================================================*/
 
+.about__section{
+    padding: 35px 0 0 0;
+    background-color: var(--color-background-light);
+}
+.about__top {
+    display: flex;
+    position: relative;
+    min-height: 262px;
+}
+.about__text {
+    max-width: 640px;
+    font-size: var(--size-text);
+}
+.about__img {
+    width: 294px;
+    height: 330px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+.about__video {
+    height: 494px;
+    width: 904px;
+    background-image: url(https://img.youtube.com/vi/oBWO9NdBYeI/sddefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: contain;
+}

@@ -73,26 +73,94 @@
 </section>
 
 <section class="about__section">
- <div class="container">
-    <div class="inner-wrapper">
-        <div class="about__top">
-            <p class="about__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода вокруг ёлки, зато есть: фантастический квест, во время которого гости отправятся в путешствие по параллельным мирам. Спецагенты, которые создают таинственную атмосферу и сопровождают вас в
-                увлекательном приключении. Оригинальные подарки от Деда Мороза,
-                которые приведут в восторг каждого гостя и будут напоминать о
-                классном празднике ещё долгое время. Бумажная дискотека, которая
-                станет фееричным завершением мероприятия и зарядит всех гостей
-                новогодним настроением! Мероприятие длится 3 часа и подходит детям
-                от 6 до 12 лет.</p>
-            <img  src="./assets/img/about/about__img.png" class="about__img" alt="presents" decoding="async" width="294" height="330">
-        </div>
-        <div class="about__buttons">
-            <button class="about__btn button">Афиша</button>
-            <button class="about__btn button">Купить билет</button>
-        </div>
-        <div class="about__video"></div>
+    <div class="container">
+        <div class="inner-wrapper">
+            <div class="about__top">
+                <p class="about__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода вокруг ёлки, зато
+                    есть: <b>фантастический квест</b>, во время которого гости отправятся в путешствие по параллельным
+                    мирам. <b>Спецагенты</b>, которые
+                    создают таинственную атмосферу и сопровождают вас в
+                    увлекательном приключении. <b>Оригинальные подарки</b> от Деда Мороза,
+                    которые приведут в восторг каждого гостя и будут напоминать о
+                    классном празднике ещё долгое время. <b>Бумажная дискотека</b>, которая
+                    станет фееричным завершением мероприятия и зарядит всех гостей
+                    новогодним настроением! Мероприятие длится 3 часа и подходит детям
+                    от 6 до 12 лет.</p>
+                <img src="./assets/img/about/about__img.png" class="about__img" alt="presents" decoding="async"
+                     width="294" height="330">
+            </div>
+            <div class="about__buttons">
+                <button class="about__btn button">Афиша</button>
+                <button class="about__btn button">Купить билет</button>
+            </div>
+            <div class="about__video">
+                <div class="about__video-play"></div>
+            </div>
 
+        </div>
     </div>
- </div>
+</section>
+
+<section class="program__section">
+    <div class="container">
+        <h2 class="program__title">Ёлка в «Парке чудес Галилео» приведёт в восторг
+            каждого ребёнка. На мероприятии гостей ждёт мероприятие из 3-х частей:</h2>
+    </div>
+    <img class="program__img_type_left">
+    <div class="program__content">
+        <div class="container">
+            <div class="program__item">
+                <div class="program__item-info">
+                    <h4 class="program__subtitle">1. Фантастический
+                        квест</h4>
+                    <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода
+                        вокруг ёлки, зато есть: фантастический квест, во время которого гости
+                        отправятся в путешствие по параллельным мирам. Спецагенты,
+                        которые создают таинственную атмосферу и сопровождают вас в
+                        увлекательном приключении.</p>
+                    <div class="program__time-wrapper">
+                        <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async" width="22" height="22" alt="clock">
+                        <p class="program__time">3 часа</p>
+                    </div>
+                </div>
+                <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400" height="267" alt="item">
+            </div>
+            <div class="program__item">
+                <div class="program__item-info">
+                    <h4 class="program__subtitle">1. Фантастический
+                        квест</h4>
+                    <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода
+                        вокруг ёлки, зато есть: фантастический квест, во время которого гости
+                        отправятся в путешствие по параллельным мирам. Спецагенты,
+                        которые создают таинственную атмосферу и сопровождают вас в
+                        увлекательном приключении.</p>
+                    <div class="program__time-wrapper">
+                        <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async" width="22" height="22" alt="clock">
+                        <p class="program__time">3 часа</p>
+                    </div>
+                </div>
+                <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400" height="267" alt="item">
+            </div>
+            <div class="program__item">
+                <div class="program__item-info">
+                    <h4 class="program__subtitle">1. Фантастический
+                        квест</h4>
+                    <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода
+                        вокруг ёлки, зато есть: фантастический квест, во время которого гости
+                        отправятся в путешствие по параллельным мирам. Спецагенты,
+                        которые создают таинственную атмосферу и сопровождают вас в
+                        увлекательном приключении.</p>
+                    <div class="program__time-wrapper">
+                        <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async" width="22" height="22" alt="clock">
+                        <p class="program__time">3 часа</p>
+                    </div>
+                </div>
+                <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400" height="267" alt="item">
+            </div>
+        </div>
+    </div>
+    <img class="program__img_type_right">
+
 </section>
 
 <footer></footer>
