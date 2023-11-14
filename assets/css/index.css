@@ -1,0 +1,144 @@
+@import url("normalize.css");
+@import url("../fonts/PT_mono/index.css");
+@import url("../fonts/PT_sans/index.css");
+@import url("variables.css");
+
+body {
+    background-color: var(--color-background-light);
+    font-family: PT-sans, sans-serif;
+}
+
+.container{
+    max-width: 964px;
+    margin: 0 auto;
+}
+.button {
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--color-button);
+    border-radius: 20px;
+    color: var(--color-button-text);
+    font-size: var(--size-button-text);
+}
+.inner-wrapper {
+    background-color: var(--color-background-super-light);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+/*===================================================================HEADER=================================================================================*/
+
+.header {
+    min-height: 130px;
+    background-color: var(--color-yellow);
+    box-shadow: 0 15px 30px 10px rgba(0, 0, 0, .1);
+    padding: 30px 0 0 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/*HEADER_IMG*/
+.header__img-wrapper {
+    max-width: 225px;
+    max-height: 70px;
+    position: relative;
+    display: flex;
+}
+.header__img-wheel_type_black{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+.header__img-wheel_type_red{
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+}
+.header__img-eye {
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 32px;
+    left: 100px;
+
+}
+.header__img{
+    padding-left: 65px;
+    width: 155px;
+    height: 55px;
+}
+/*HEADER_CITY*/
+.header__city-wrapper {
+    max-width: 225px;
+    display: flex;
+    align-items: center;
+}
+.header__city-wrapper svg {
+    width: 35px;
+    height: 9px;
+    margin-right: 10px;
+}
+/*HEADER_PHONE*/
+.header__telephone-wrapper {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.header__btn {
+    margin-top: 20px;
+}
+.header__telephone {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-text);
+}
+/*===================================================================SLIDER_SECTION=================================================================================*/
+
+.slider__section {
+    background-color: var(--color-yellow);
+}
+.slider__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.slider__content {
+    max-width: 500px;
+    margin-left: 220px
+}
+
+/*===================================================================NAVIGATION_SECTION=================================================================================*/
+.navigation__section {
+    background-color: var(--color-accent);
+}
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 35px 0;
+}
+.navigation__list-item a {
+    font-size: var(--size-text);
+    color: var(--color-text-light);
+}
+
+/*===================================================================ABOUT_SECTION=================================================================================*/
+

@@ -1,0 +1,11 @@
+@font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: PT-sans;
+    src: url("PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 700; /* Соответствует значению bold */
+    font-family: PT-sans;
+    src: url("PT_Sans-Web-Bold.ttf");
+}

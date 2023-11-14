@@ -1,0 +1,11 @@
+@font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: PT-mono;
+    src: url("PTM55F.ttf");
+}
+
+@font-face {
+    font-weight: 700; /* Соответствует значению bold */
+    font-family: PT-mono;
+    src: url("PTM75F.ttf");
+}

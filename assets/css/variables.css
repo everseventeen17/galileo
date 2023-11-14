@@ -1,0 +1,13 @@
+:root {
+    --color-button: #E63323;
+    --color-button-text: #ffff;
+    --color-yellow: #FED832;
+    --color-accent: #E63323;
+    --color-text: #1D1E1C;
+    --color-text-light: #ffff;
+    --color-background-light: #FDFCF0;
+    --color-background-super-light: #FFFF;
+
+    --size-button-text: 16px;
+    --size-text: 18px;
+}
