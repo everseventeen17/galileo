@@ -7,7 +7,20 @@
     --color-text-light: #ffff;
     --color-background-light: #FDFCF0;
     --color-background-super-light: #FFFF;
+    --color-background-solution:#009245;
 
     --size-button-text: 16px;
     --size-text: 18px;
+    --size-title-text: 30px;
+    --title-font-weight: bold;
+
+    --size-subtitle-text: 28px;
+    --subtitle-font-weight: bold;
+    --subtitle-font-color: #E63323;
+
+    --bold-accent-font-weight: bold;
+    --bold-accent-font-size: 24px;
+
+    --size-big-text: 30px;
+    --weight-big-text: bold;
 }
