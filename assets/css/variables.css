@@ -3,6 +3,7 @@
     --color-button-text: #ffff;
     --color-yellow: #FED832;
     --affiche-date-color: #FFDA00;
+    --price-color:#FFDA00;
     --affiche-time-color: #ffff;
     --color-accent: #E63323;
     --color-text: #1D1E1C;
@@ -16,6 +17,10 @@
     --size-text: 18px;
     --size-title-text: 30px;
     --title-font-weight: bold;
+
+    --title-MONO-font-size: bold;
+    --title-MONO-font-size: 45px;
+    --title-font-family: PT-mono;
 
     --size-subtitle-text: 28px;
     --subtitle-font-weight: bold;
