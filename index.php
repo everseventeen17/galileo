@@ -209,9 +209,33 @@
     </div>
 </section>
 
-<section class="poster__section">
+<section class="affiche__section">
     <div class="section__title-wrapper section__title-wrapper_type_white">
-        <h2 class="solution__title section__title">Афиша новогодних мероприятий в «Парке чудес Галилео»</h2>
+        <h2 class="affiche__title section__title">Афиша новогодних мероприятий в «Парке чудес Галилео»</h2>
+    </div>
+    <div class="affiche__content">
+        <div class="container">
+            <div class="affiche__items">
+                <div class="affiche__item">
+                    <p class="affiche__date">19 декабря, пн</p>
+                    <button class="affiche__time">12:00</button>
+                    <button class="affiche__time affiche__time_type_empty"></button>
+                    <button class="affiche__time">12:00</button>
+                </div>
+                <div class="affiche__item">
+                    <p class="affiche__date">25 декабря, пн</p>
+                    <button class="affiche__time">12:00</button>
+                    <button class="affiche__time affiche__time_type_empty"></button>
+                    <button class="affiche__time">12:00</button>
+                </div>
+                <div class="affiche__item">
+                    <p class="affiche__date">26 декабря, пн</p>
+                    <button class="affiche__time">12:00</button>
+                    <button class="affiche__time affiche__time_type_empty"></button>
+                    <button class="affiche__time">12:00</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </section>

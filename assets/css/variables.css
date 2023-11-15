@@ -2,12 +2,15 @@
     --color-button: #E63323;
     --color-button-text: #ffff;
     --color-yellow: #FED832;
+    --affiche-date-color: #FFDA00;
+    --affiche-time-color: #ffff;
     --color-accent: #E63323;
     --color-text: #1D1E1C;
     --color-text-light: #ffff;
     --color-background-light: #FDFCF0;
     --color-background-super-light: #FFFF;
     --color-background-solution:#009245;
+    --color-background-accent: #E63323;
 
     --size-button-text: 16px;
     --size-text: 18px;
