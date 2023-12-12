@@ -20,8 +20,19 @@ $(document).ready(function(){
     });
     $(".dropdown-head").on("click", function (e){
         $(this).toggleClass('active')
+        $(this).find('svg').toggleClass('active')
         $(this).parent('.dropdown').find('.dropdown-slide').slideToggle();
     })
+
+        $('.hamburger-wrapper').on('click', function() {
+            $('.hamburger-menu').toggleClass('animate');
+            $('.mobile-menu-overlay').toggleClass('visible');
+        })
+        $('.mobile-menu-overlay > ul > li > a').on('click', function () {
+            $('.hamburger-menu').removeClass('animate');
+            $('.mobile-menu-overlay').removeClass('visible');
+        })
+
 });
 
 
@@ -29,10 +40,11 @@ $(document).ready(function(){
 window.onscroll = function() {stickyHeader()};
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
-function stickyHeader() {
-    if (window.pageYOffset >= sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
+
+// function stickyHeader() {
+//     if (window.pageYOffset >= sticky) {
+//         header.classList.add("sticky");
+//     } else {
+//         header.classList.remove("sticky");
+//     }
+// }
