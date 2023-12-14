@@ -1,2 +1,4 @@
-# galileo
-1
+# GALILEO
+
+
+ссылка на GhPages: https://everseventeen17.github.io/galileo/
