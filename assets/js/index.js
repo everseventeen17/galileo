@@ -3,6 +3,7 @@ $(document).ready(function(){
         items:1,
         loop:true,
         margin:20,
+        dots: false,
         autoplay:true,
         autoplayTimeout:100000,
         autoplayHoverPause:true
@@ -10,8 +11,24 @@ $(document).ready(function(){
     $(".slide-two").owlCarousel({
         items:3,
         loop:true,
-        dots: false,
+        dots: true,
         nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        margin:20,
+        autoplay:true,
+        autoplayTimeout:100000,
+        autoplayHoverPause:true,
+        responsive : {
+            // breakpoint from 0 up
+            0:{items:1,nav:true},
+            769:{items:3},
+        }
+    });
+    $(".slide-three").owlCarousel({
+        items:1,
+        loop:true,
+        dots: true,
+        nav: false,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin:20,
         autoplay:true,
@@ -35,7 +52,8 @@ $(document).ready(function(){
             $('body').toggleClass('overflow-hidden');
         })
     $(window).on('load', function() {
-        $('.preloader').fadeOut().end().delay(10).fadeOut('slow');
+        // $('.preloader').fadeOut().end().delay(500).fadeOut('slow');
+        // $('body').toggleClass('overflow-hidden');
     });
 
 });

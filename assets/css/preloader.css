@@ -26,22 +26,19 @@
 .preloader__item {
     position: absolute;
     display: inline-block;
-    top: 0;
     border-radius: 100%;
-    left: 0;
     width: 100px;
+    margin: 0 auto;
 }
 
 .preloader__item:first-child {
-    top: -50px;
     animation-delay: -1s;
     animation: logo-wheel-black 8s infinite;
-    left: -50px;
+    top: -50px;
+    left: -15px;
 }
 
 .preloader__item:last-child {
-    top: auto;
-    bottom: -10px;
     animation-delay: -1s;
     width: 80px;
     animation: logo-wheel-red 8s infinite;
