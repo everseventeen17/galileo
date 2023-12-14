@@ -1,3 +1,6 @@
+import {PopupWithForm} from "./src/PopupWithForm";
+
+
 $(document).ready(function(){
     $(".slide-one").owlCarousel({
         items:1,
