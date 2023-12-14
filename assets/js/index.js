@@ -27,11 +27,16 @@ $(document).ready(function(){
         $('.hamburger-wrapper').on('click', function() {
             $('.hamburger-menu').toggleClass('animate');
             $('.mobile-menu-overlay').toggleClass('visible');
+            $('body').toggleClass('overflow-hidden');
         })
         $('.mobile-menu-overlay > ul > li > a').on('click', function () {
             $('.hamburger-menu').removeClass('animate');
             $('.mobile-menu-overlay').removeClass('visible');
+            $('body').toggleClass('overflow-hidden');
         })
+    $(window).on('load', function() {
+        $('.preloader').fadeOut().end().delay(10).fadeOut('slow');
+    });
 
 });
 

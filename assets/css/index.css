@@ -4,6 +4,7 @@
 @import url("variables.css");
 @import url("animations.css");
 @import url("hamburger.css");
+@import url("preloader.css");
 
 body {
     background-color: var(--color-background-light);
@@ -116,6 +117,7 @@ body {
     width: 100%;
     padding: 15px;
     border-radius: 15px;
+    z-index: 2;
 }
 
 .header .container .dropdown .dropdown-slide .header__dropdown__text {
@@ -282,6 +284,9 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: contain;
+}
+.about__buttons {
+    margin-top: 15px;
 }
 
 /*===================================================================PROGRAM_SECTION=================================================================================*/
@@ -885,6 +890,9 @@ body {
 }
 
 @media (max-width: 769px) {
+    .button {
+        width: 155px;
+    }
     .slider__section .slider__item {
         flex-direction: column;
         align-items: center;
@@ -967,7 +975,7 @@ body {
         width: 71px;
         height: auto;
         position: absolute;
-        top: -52px;
+        top: -35px;
         right: -10px;
     }
     .about__text {
@@ -975,6 +983,13 @@ body {
     }
     .about__section .container{
         padding: 0;
+    }
+    .about__section .container .inner-wrapper{
+        padding: 20px;
+    }
+    .about__buttons {
+        display: flex;
+        justify-content: space-between;
     }
 }
 

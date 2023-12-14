@@ -2,6 +2,9 @@
 .visible {
     display: block !important;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 nav.mobile-menu {
     display: none;
 }

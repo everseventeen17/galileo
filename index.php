@@ -8,17 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="preloader">
+    <div class="preloader__row">
+        <img class="preloader__item" src="./assets/img/header/logo-wheel-1.svg"
+             decoding="async"
+             alt="wheel-black">
+        <img class="preloader__item" src="./assets/img/header/logo-wheel-2.svg"
+             decoding="async"
+             alt="wheel-red">
+    </div>
+</div>
 <header class="header sticky" id="myHeader">
     <div class="container">
         <div class="header__right-wrapper">
             <div class="header__img-wrapper">
-                <img class="header__img-wheel_type_black desktop__logo" src="./assets/img/header/logo-wheel-1.svg" decoding="async"
+                <img class="header__img-wheel_type_black desktop__logo" src="./assets/img/header/logo-wheel-1.svg"
+                     decoding="async"
                      alt="wheel-black">
-                <img class="header__img-wheel_type_red desktop__logo" src="./assets/img/header/logo-wheel-2.svg" decoding="async"
+                <img class="header__img-wheel_type_red desktop__logo" src="./assets/img/header/logo-wheel-2.svg"
+                     decoding="async"
                      alt="wheel-red">
                 <img class="header__img-eye desktop__logo" src="./assets/img/header/eye.svg" decoding="async" alt="eye">
-                <img class="header__img desktop__logo" src="./assets/img/header/logo__name.svg" decoding="async" alt="Галилео">
-                <img class="header__img mobile__logo" src="./assets/img/header/logo-mobile.svg" decoding="async" alt="Галилео">
+                <img class="header__img desktop__logo" src="./assets/img/header/logo__name.svg" decoding="async"
+                     alt="Галилео">
+                <img class="header__img mobile__logo" src="./assets/img/header/logo-mobile.svg" decoding="async"
+                     alt="Галилео">
             </div>
             <div class="dropdown">
                 <div class="header__city-wrapper dropdown-head">
@@ -41,7 +55,7 @@
 
         <div class="header__wrapper-left">
             <nav class="mobile-menu">
-                 <b><p>МЕНЮ</p></b>
+                <b><p>МЕНЮ</p></b>
                 <a href="#" class="hamburger-wrapper">
                     <div class="hamburger-menu"></div>
                 </a>
@@ -116,98 +130,100 @@
                     станет фееричным завершением мероприятия и зарядит всех гостей
                     новогодним настроением! Мероприятие длится 3 часа и подходит детям
                     от 6 до 12 лет.</p>
-                <img src="./assets/img/about/about__img.png" class="about__img desktop__img" alt="presents" decoding="async"
+                <img src="./assets/img/about/about__img.png" class="about__img desktop__img" alt="presents"
+                     decoding="async"
                      width="295" height="330">
-                <img src="./assets/img/about/about-mobile-img.png" class="about__img mobile__img" alt="presents" decoding="async"
+                <img src="./assets/img/about/about-mobile-img.png" class="about__img mobile__img" alt="presents"
+                     decoding="async"
                      width="71" height="72">
             </div>
-<!--            <div class="about__buttons">-->
-<!--                <button class="about__btn button">Афиша</button>-->
-<!--                <button class="about__btn button">Купить билет</button>-->
-<!--            </div>-->
-<!--            <div class="about__video">-->
-<!--                <div class="about__video-play"></div>-->
-<!--            </div>-->
+            <div class="about__buttons">
+                <button class="about__btn button">Афиша</button>
+                <button class="about__btn button">Купить билет</button>
+            </div>
+            <!--            <div class="about__video">-->
+            <!--                <div class="about__video-play"></div>-->
+            <!--            </div>-->
 
         </div>
     </div>
 </section>
 <!---->
-<!--<section class="program__section">-->
-<!--    <div class="section__title-wrapper">-->
-<!--        <h2 class="program__title section__title">Ёлка в «Парке чудес Галилео» приведёт в восторг-->
-<!--            каждого ребёнка. На мероприятии гостей ждёт мероприятие из 3-х частей:</h2>-->
-<!--    </div>-->
-<!---->
-<!--    <div class="program__wrapper">-->
-<!--        <img src="./assets/img/program/patern.png" decoding="async" width="287" height="1117" alt="patern_left"-->
-<!--             class="program__img_type_left">-->
-<!--        <div class="program__content">-->
-<!--            <div class="container">-->
-<!--                <div class="program__item">-->
-<!--                    <div class="program__item-info">-->
-<!--                        <h4 class="program__subtitle">1. Фантастический-->
-<!--                            квест</h4>-->
-<!--                        <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода-->
-<!--                            вокруг ёлки, зато есть: фантастический квест, во время которого гости-->
-<!--                            отправятся в путешствие по параллельным мирам. Спецагенты,-->
-<!--                            которые создают таинственную атмосферу и сопровождают вас в-->
-<!--                            увлекательном приключении.</p>-->
-<!--                        <div class="program__time-wrapper">-->
-<!--                            <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async"-->
-<!--                                 width="40" height="40" alt="clock">-->
-<!--                            <p class="program__time">3 часа</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400"-->
-<!--                         height="267" alt="item">-->
-<!--                </div>-->
-<!--                <div class="program__item">-->
-<!--                    <div class="program__item-info">-->
-<!--                        <h4 class="program__subtitle">1. Фантастический-->
-<!--                            квест</h4>-->
-<!--                        <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода-->
-<!--                            вокруг ёлки, зато есть: фантастический квест, во время которого гости-->
-<!--                            отправятся в путешствие по параллельным мирам. Спецагенты,-->
-<!--                            которые создают таинственную атмосферу и сопровождают вас в-->
-<!--                            увлекательном приключении.</p>-->
-<!--                        <div class="program__time-wrapper">-->
-<!--                            <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async"-->
-<!--                                 width="40" height="40" alt="clock">-->
-<!--                            <p class="program__time">3 часа</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400"-->
-<!--                         height="267" alt="item">-->
-<!--                </div>-->
-<!--                <div class="program__item">-->
-<!--                    <div class="program__item-info">-->
-<!--                        <h4 class="program__subtitle">1. Фантастический-->
-<!--                            квест</h4>-->
-<!--                        <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода-->
-<!--                            вокруг ёлки, зато есть: фантастический квест, во время которого гости-->
-<!--                            отправятся в путешствие по параллельным мирам. Спецагенты,-->
-<!--                            которые создают таинственную атмосферу и сопровождают вас в-->
-<!--                            увлекательном приключении.</p>-->
-<!--                        <div class="program__time-wrapper">-->
-<!--                            <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async"-->
-<!--                                 width="40" height="40" alt="clock">-->
-<!--                            <p class="program__time">3 часа</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400"-->
-<!--                         height="267" alt="item">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="program_bottom">-->
-<!--                <h4 class="program__subtitle">Общая длительность праздника — 3 часа</h4>-->
-<!--                <button class="program__btn button">Купить билет</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <img src="./assets/img/program/patern_right.png" decoding="async" width="287" height="1117" alt="patern_right"-->
-<!--             class="program__img_type_right">-->
-<!--    </div>-->
-<!--</section>-->
+<section class="program__section">
+    <div class="section__title-wrapper">
+        <h2 class="program__title section__title">Ёлка в «Парке чудес Галилео» приведёт в восторг
+            каждого ребёнка. На мероприятии гостей ждёт мероприятие из 3-х частей:</h2>
+    </div>
+
+    <div class="program__wrapper">
+        <img src="./assets/img/program/patern.png" decoding="async" width="287" height="1117" alt="patern_left"
+             class="program__img_type_left">
+        <div class="program__content">
+            <div class="container">
+                <div class="program__item">
+                    <div class="program__item-info">
+                        <h4 class="program__subtitle">1. Фантастический
+                            квест</h4>
+                        <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода
+                            вокруг ёлки, зато есть: фантастический квест, во время которого гости
+                            отправятся в путешствие по параллельным мирам. Спецагенты,
+                            которые создают таинственную атмосферу и сопровождают вас в
+                            увлекательном приключении.</p>
+                        <div class="program__time-wrapper">
+                            <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async"
+                                 width="40" height="40" alt="clock">
+                            <p class="program__time">3 часа</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400"
+                         height="267" alt="item">
+                </div>
+                <div class="program__item">
+                    <div class="program__item-info">
+                        <h4 class="program__subtitle">1. Фантастический
+                            квест</h4>
+                        <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода
+                            вокруг ёлки, зато есть: фантастический квест, во время которого гости
+                            отправятся в путешствие по параллельным мирам. Спецагенты,
+                            которые создают таинственную атмосферу и сопровождают вас в
+                            увлекательном приключении.</p>
+                        <div class="program__time-wrapper">
+                            <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async"
+                                 width="40" height="40" alt="clock">
+                            <p class="program__time">3 часа</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400"
+                         height="267" alt="item">
+                </div>
+                <div class="program__item">
+                    <div class="program__item-info">
+                        <h4 class="program__subtitle">1. Фантастический
+                            квест</h4>
+                        <p class="program__text">На новогоднем празднике в «Парке чудес Галилео» нет хоровода
+                            вокруг ёлки, зато есть: фантастический квест, во время которого гости
+                            отправятся в путешствие по параллельным мирам. Спецагенты,
+                            которые создают таинственную атмосферу и сопровождают вас в
+                            увлекательном приключении.</p>
+                        <div class="program__time-wrapper">
+                            <img src="./assets/img/program/clock.svg" class="program__clock-img" decoding="async"
+                                 width="40" height="40" alt="clock">
+                            <p class="program__time">3 часа</p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/program/program_1.jpg" class="program__img" decoding="async" width="400"
+                         height="267" alt="item">
+                </div>
+            </div>
+            <div class="program_bottom">
+                <h4 class="program__subtitle">Общая длительность праздника — 3 часа</h4>
+                <button class="program__btn button">Купить билет</button>
+            </div>
+        </div>
+        <img src="./assets/img/program/patern_right.png" decoding="async" width="287" height="1117" alt="patern_right"
+             class="program__img_type_right">
+    </div>
+</section>
 <!---->
 <!--<section class="solution__section">-->
 <!--    <div class="section__title-wrapper section__title-wrapper_type_green">-->
