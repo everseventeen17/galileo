@@ -34,7 +34,7 @@ nav.mobile-menu .mobile-menu-overlay ul li a {
 }
 .hamburger-menu, .hamburger-menu:after, .hamburger-menu:before {
     width: 24px;
-    height: 4px;
+    height: 2px;
     border-radius: 2px;
 }
 .hamburger-wrapper {
