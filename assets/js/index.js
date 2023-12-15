@@ -1,5 +1,13 @@
 import {PopupWithForm} from "./src/PopupWithForm.js";
 import {FormValidator} from "./src/FormValidator.js";
+$(window).on('load', function() {
+    $('.preloader').fadeOut( {
+        duration: 800,
+        easing: "linear",
+        queue: false
+    });
+    $('body').toggleClass('overflow-hidden');
+});
 
 $(document).ready(function(){
     $(".slide-one").owlCarousel({
@@ -54,15 +62,6 @@ $(document).ready(function(){
             $('.mobile-menu-overlay').removeClass('visible');
             $('body').toggleClass('overflow-hidden');
         })
-    $(window).on('load', function() {
-        $('.preloader').fadeOut( { // плавно изменяя прозрачность скрывааем элементы <div> в документе
-            duration: 800, // продолжительность анимации
-            easing: "linear",
-            queue: false
-        });
-
-        $('body').toggleClass('overflow-hidden');
-    });
     function callBackFormSubmit(data) {
         console.log(2)
     }

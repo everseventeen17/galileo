@@ -193,8 +193,6 @@ body {
     top: 37px;
     left: 37px;
     animation: logo-wheel-red 8s infinite;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
 }
 
 .header__img-eye {

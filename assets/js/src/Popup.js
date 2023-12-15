@@ -3,20 +3,20 @@ export class Popup {
         this._popup = document.querySelector(popupSelector);
         this._buttonTrigger = document.querySelectorAll(buttonSelector);
         this._body = document.querySelector('body');
-        this._documentWidth = parseInt(document.documentElement.clientWidth);
-        this._windowWidth = parseInt(window.innerWidth);
-        this._scrollbarWidth = this._windowWidth - this._documentWidth;
     }
 
     // публичный метод открыть popup
     open() {
         this._popup.classList.add('popup_opened');
         document.addEventListener('keydown', this._handleEscClose)
+        this._documentWidth = parseInt(document.documentElement.clientWidth);
+        this._windowWidth = parseInt(window.innerWidth);
         this._body.classList.add('overflow-hidden')
         this._appendOverlayModal()
     };
 
     _appendOverlayModal() {
+        this._scrollbarWidth = this._windowWidth - this._documentWidth;
         this._body.style.cssText = `margin-right: ${this._scrollbarWidth}px; overflow: hidden;}`;
     }
 
