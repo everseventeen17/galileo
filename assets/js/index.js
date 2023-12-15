@@ -1,5 +1,5 @@
-import {PopupWithForm} from "./src/PopupWithForm";
-
+import {PopupWithForm} from "./src/PopupWithForm.js";
+import {FormValidator} from "./src/FormValidator.js";
 
 $(document).ready(function(){
     $(".slide-one").owlCarousel({
@@ -55,17 +55,22 @@ $(document).ready(function(){
             $('body').toggleClass('overflow-hidden');
         })
     $(window).on('load', function() {
-        // $('.preloader').fadeOut().end().delay(500).fadeOut('slow');
-        // $('body').toggleClass('overflow-hidden');
+        $('.preloader').fadeOut().end().delay(1000).fadeOut('slow');
+        $('body').toggleClass('overflow-hidden');
     });
+    function callBackFormSubmit(data) {
+        console.log(2)
+    }
+
+    new PopupWithForm('.popup_type_book-a-ticket', callBackFormSubmit, '.js-bookTicket')
 
 });
 
 
 
-window.onscroll = function() {stickyHeader()};
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+// window.onscroll = function() {stickyHeader()};
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
 
 // function stickyHeader() {
 //     if (window.pageYOffset >= sticky) {

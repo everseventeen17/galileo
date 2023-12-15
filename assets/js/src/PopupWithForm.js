@@ -1,12 +1,13 @@
 import { Popup } from './Popup.js';
 
 export class PopupWithForm extends Popup {
-    constructor(popupSelector, callbackFormSubmit) {
-        super(popupSelector); // popupSelector наследует от Popup
+    constructor(popupSelector, callbackFormSubmit, buttonSelector) {
+        super(popupSelector, buttonSelector);
         this._callbackFormSubmit = callbackFormSubmit; //callback сабмита формы
         this._popupForm = this._popup.querySelector('.popup__form'); // форма модального окна
         this._inputList = Array.from(this._popupForm.querySelectorAll('.popup__input-text')); // инпуты модального окна
         this._submitButton = this._popupForm.querySelector('.popup__submit-btn') // кнопка сабмита формы
+        this._setEventListeners();
     }
     // Добавить точки сохранения
     addSavingDots(text = 'Сохранение...') {
@@ -35,8 +36,8 @@ export class PopupWithForm extends Popup {
     };
 
     // Перезаписывает родительский метод setEventListeners
-    setEventListeners() {
-        super.setEventListeners(); // setEventListeners наследует от Popup
+    _setEventListeners() {
+        super._setEventListeners(); // setEventListeners наследует от Popup
         this._popupForm.addEventListener('submit', (evt) => {
             evt.preventDefault();
             this._callbackFormSubmit(this._getInputValues());

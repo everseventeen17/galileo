@@ -34,4 +34,13 @@
 
     --size-big-text: 30px;
     --weight-big-text: bold;
+
+
+    --popup-BackgroundColor: #FFDA00;
+    --popup-titleSize: 35px;
+    --popup-TextSize: 18px;
+    --popup-AgreeTextSize: 14px;
+    --popup-ButtonColor: #E63323;
+    --popup-ButtonColorHover: rgba(230, 51, 35, 0.75);
+
 }
