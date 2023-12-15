@@ -55,7 +55,12 @@ $(document).ready(function(){
             $('body').toggleClass('overflow-hidden');
         })
     $(window).on('load', function() {
-        $('.preloader').fadeOut().end().delay(1000).fadeOut('slow');
+        $('.preloader').fadeOut( { // плавно изменяя прозрачность скрывааем элементы <div> в документе
+            duration: 800, // продолжительность анимации
+            easing: "linear",
+            queue: false
+        });
+
         $('body').toggleClass('overflow-hidden');
     });
     function callBackFormSubmit(data) {
