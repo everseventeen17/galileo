@@ -137,6 +137,19 @@
   position: relative;
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  max-height: 800px;
+  overflow-y: scroll;
+}
+.popup__container::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgba(26, 24, 47, 0.15);
+  border-radius: 5px;
+  height: 200px;
+}
+
+.popup__container::-webkit-scrollbar-thumb {
+  background: #919191;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 566px) {
@@ -188,6 +201,12 @@
 .popup__content-clientData {
   width: 50%;
   padding-right: 20px;
+}
+.popup_type_buy-a-ticket .popup__content-clientData {
+  width: 100%;
+}
+.popup__content-dateData {
+  width: 50%;
 }
 .popup__content-eventData {
   width: 50%;

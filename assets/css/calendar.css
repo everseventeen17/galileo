@@ -1,0 +1,94 @@
+
+.calendar-js {
+    display: flex;
+}
+.calendar-js ul {
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-js li {
+    list-style-type: none;
+}
+
+.calendar-js .calendar__week {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.calendar-js .calendar__month {
+    display: flex;
+    flex-direction: column;
+}
+.calendar-js .calendar__title {
+    text-align: center;
+}
+.calendar-js .calendar__weeks-wrapper {
+    padding: 10px 40px 20px 40px;
+}
+/*CALENDAR__DAYS*/
+.calendar-js .calendar__day {
+    width: 40px;
+    height: 40px;
+    background-color: #fdebe9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.calendar-js .calendar__day.calendar__current{
+    border: 2px solid red
+}
+/*DISABLED__DAYS*/
+.calendar-js .calendar__day[data-day-count="7"] {
+    background-color: rgba(230, 51, 35, 0.65);
+    pointer-events: none;
+}
+.calendar-js .calendar__day[data-disabled="true"] {
+    pointer-events: none;
+    background-color: rgb(145, 145, 145);
+    opacity: 0.3;
+}
+/*======================================*/
+.calendar-js .calendar__day:not([data-day-count="7"]):hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.calendar-js .calendar__control{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-top: 10px;
+    background-image: url("../img/calendar/button.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.calendar-js .calendar__control:disabled{
+    opacity: 0.5;
+}
+.calendar-js .calendar__control:hover{
+    opacity: 0.7;
+}
+.calendar-js .calendar__control_prev {
+    margin-right: -50px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+.calendar-js .calendar__control_next {
+    margin-left: -50px;
+    z-index: 1;
+}
+.calendar-js .calendar__week-name-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 0 50px;
+}
+.calendar-js .calendar__inner {
+    background-color: #ffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}

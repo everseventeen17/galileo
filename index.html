@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./assets/js/libs/owl-carousel/owl.carousel.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="overflow-hidden"> <!--//overflow-hidden -->
-<div class="preloader">
-    <div class="preloader__row">
-        <img class="preloader__item" src="./assets/img/header/logo-wheel-1.svg"
-             decoding="async"
-             alt="wheel-black">
-        <img class="preloader__item" src="./assets/img/header/logo-wheel-2.svg"
-             decoding="async"
-             alt="wheel-red">
-    </div>
-</div>
+<body class=""> <!--//overflow-hidden -->
+<!--<div class="preloader">-->
+<!--    <div class="preloader__row">-->
+<!--        <img class="preloader__item" src="./assets/img/header/logo-wheel-1.svg"-->
+<!--             decoding="async"-->
+<!--             alt="wheel-black">-->
+<!--        <img class="preloader__item" src="./assets/img/header/logo-wheel-2.svg"-->
+<!--             decoding="async"-->
+<!--             alt="wheel-red">-->
+<!--    </div>-->
+<!--</div>-->
 <header class="header sticky" id="myHeader">
     <div class="container">
         <div class="header__right-wrapper">
@@ -72,7 +72,7 @@
             </nav>
             <div class="header__telephone-wrapper">
                 <a class="header__telephone" href="#">+7 (383) 312-05-09</a>
-                <button class="header__btn button">Купить билет</button>
+                <button class="header__btn button js-buyTicket">Купить билет</button>
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@
         <div class="slider__content">
             <h1 class="slider__title">Фантастическое новогоднее
                 приключение для детей в «Парке чудес Галилео»!</h1>
-            <button class="slider__btn button">Купить билет</button>
+            <button class="slider__btn button js-buyTicket">Купить билет</button>
         </div>
         <div class="slider__img-wrapper">
             <img src="./assets/img/slider/slider_item.png" alt="slider_item" decoding="async" height="395" width="659">
@@ -139,7 +139,7 @@
             </div>
             <div class="about__buttons">
                 <button class="about__btn button">Афиша</button>
-                <button class="about__btn button">Купить билет</button>
+                <button class="about__btn button js-buyTicket">Купить билет</button>
             </div>
             <!--            <div class="about__video">-->
             <!--                <div class="about__video-play"></div>-->
@@ -229,7 +229,7 @@
             </div>
             <div class="program_bottom">
                 <h4 class="program__subtitle">Общая длительность праздника — 3 часа</h4>
-                <button class="program__btn button">Купить билет</button>
+                <button class="program__btn button js-buyTicket">Купить билет</button>
             </div>
         </div>
         <img src="./assets/img/program/patern_right.png" decoding="async" width="287" height="1117" alt="patern_right"
@@ -432,7 +432,7 @@
                 <button class="button">Ознакомиться</button>
             </div>
             <div class="price__buttons">
-                <button class="button">Купить билет</button>
+                <button class="button js-buyTicket">Купить билет</button>
                 <button class="button button-yellow js-bookTicket"><b>Забронировать</b></button>
 
             </div>
@@ -730,7 +730,7 @@
 
     <div class="popup popup_type_book-a-ticket">
         <div class="popup__container">
-            <button type="button" aria-label="Закрыть" class="popup__close-btn popup__close-btn_type_place"></button>
+            <button type="button" aria-label="Закрыть" class="popup__close-btn popup__close-btn_type_book"></button>
             <h2 class="popup__title">Бронирование билета</h2>
             <p class="popup__text popup__text-type-subtitle">Текстовый блок после бронирования билета</p>
             <form name="book-a-ticket" method="post" class="popup__form popup__form_type_place" novalidate>
@@ -751,18 +751,20 @@
                     <button class="popup__calendar js-calendar">Дата</button>
                     <div class="popup__choose-wrapper">
                         <p class="popup__text popup__content-text">Взрослый билет</p>
-                        <div class="popup__counter">
-                            <button type="button" class="popup__button-type-choose">-</button>
-                            <p class="popup__choose-counter popup__choose-counter-type-adult">0</p>
-                            <button type="button" class="popup__button-type-choose">+</button>
+                        <div class="popup__counter js-counter">
+                            <button type="button" class="popup__button-type-choose js-minus">-</button>
+                            <p class="popup__choose-counter popup__choose-counter-type-adult js-counter-res"
+                               data-for-input="adult">0</p>
+                            <button type="button" class="popup__button-type-choose js-plus">+</button>
                         </div>
                     </div>
                     <div class="popup__choose-wrapper">
                         <p class="popup__text popup__content-text">Детский билет</p>
-                        <div class="popup__counter">
-                            <button type="button" class="popup__button-type-choose">-</button>
-                            <p class="popup__choose-counter popup__choose-counter-type-child">0</p>
-                            <button type="button" class="popup__button-type-choose">+</button>
+                        <div class="popup__counter js-counter">
+                            <button type="button" class="popup__button-type-choose js-minus">-</button>
+                            <p class="popup__choose-counter popup__choose-counter-type-child js-counter-res"
+                               data-for-input="child">0</p>
+                            <button type="button" class="popup__button-type-choose js-plus">+</button>
                         </div>
                     </div>
                 </div>
@@ -772,11 +774,13 @@
                         <p class="popup__text">В подарок входит сундучок с конфетами и настольный набор «Механик»</p>
                     </div>
                     <div class="popup__choose-wrapper">
-                        <p class="popup__text popup__content-text"><span class="red-color-text">Новогодний подарок</span></p>
-                        <div class="popup__counter">
-                            <button type="button" class="popup__button-type-choose">-</button>
-                            <p class="popup__choose-counter popup__choose-counter-type-child">0</p>
-                            <button type="button" class="popup__button-type-choose">+</button>
+                        <p class="popup__text popup__content-text"><span
+                                class="red-color-text">Новогодний подарок</span></p>
+                        <div class="popup__counter js-counter">
+                            <button type="button" class="popup__button-type-choose js-minus">-</button>
+                            <p class="popup__choose-counter popup__choose-counter-type-present js-counter-res"
+                               data-for-input="present">0</p>
+                            <button type="button" class="popup__button-type-choose js-plus">+</button>
                         </div>
                     </div>
                 </div>
@@ -784,14 +788,85 @@
                     <p class="popup__agree">Согласен с политикой обработки персональных данных</p>
                     <button type="submit" class="popup__submit-btn popup__submit-btn_type_place">Создать</button>
                 </div>
-                <input name="adultTicket" type="hidden" placeholder="Взрослый билет" value="0">
-                <input name="childTicket" type="hidden" placeholder="Детский билет" value="0">
-                <input name="present" type="hidden" placeholder="Подарок" value="0">
-
+                <input class="popup__input-text" name="adult" type="hidden" placeholder="Взрослый билет" value="">
+                <input class="popup__input-text" name="child" type="hidden" placeholder="Детский билет" value="">
+                <input class="popup__input-text" name="present" type="hidden" placeholder="Подарок" value="">
+                <input class="popup__input-text" name="date" type="hidden" placeholder="Дата" value="">
             </form>
         </div>
     </div>
 
+    <div class="popup popup_type_buy-a-ticket">
+        <div class="popup__container">
+            <button type="button" aria-label="Закрыть" class="popup__close-btn popup__close-btn_type_place"></button>
+            <h2 class="popup__title">Покупка билета</h2>
+            <p class="popup__text popup__text-type-subtitle">Выберите дату, время, количество билетов и заполните
+                контактные данные покупателя. Также вы можете выбрать требуемое количество новогодних подарков для
+                детей.</p>
+            <form name="buy-a-ticket" method="post" class="popup__form popup__form_type_buy" novalidate>
+                <div class="popup__content popup__content-dateData">
+                    <div class="calendar-js"></div>
+                </div>
+                <div class="popup__content popup__content-eventData">
+                    <p class="popup__text popup__content-text">Выберите время:</p>
+                    <div class="affiche__time-wrapper">
+                        <button class="affiche__time">12:00</button>
+                        <button class="affiche__time affiche__time_type_empty"></button>
+                        <button class="affiche__time">12:00</button>
+                    </div>
+                    <p class="popup__text popup__content-text">Выберите тип билета:</p>
+                    <div class="popup__choose-wrapper">
+                        <p class="popup__text popup__content-text">Взрослый билет</p>
+                        <div class="popup__counter js-counter">
+                            <button type="button" class="popup__button-type-choose js-minus">-</button>
+                            <p class="popup__choose-counter popup__choose-counter-type-adult js-counter-res"
+                               data-for-input="adult">0</p>
+                            <button type="button" class="popup__button-type-choose js-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="popup__choose-wrapper">
+                        <p class="popup__text popup__content-text">Детский билет</p>
+                        <div class="popup__counter js-counter">
+                            <button type="button" class="popup__button-type-choose js-minus">-</button>
+                            <p class="popup__choose-counter popup__choose-counter-type-child js-counter-res"
+                               data-for-input="child">0</p>
+                            <button type="button" class="popup__button-type-choose js-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="popup__choose-wrapper">
+                        <p class="popup__text popup__content-text"><span
+                                class="red-color-text">Новогодний подарок</span></p>
+                        <div class="popup__counter js-counter">
+                            <button type="button" class="popup__button-type-choose js-minus">-</button>
+                            <p class="popup__choose-counter popup__choose-counter-type-present js-counter-res"
+                               data-for-input="present">0</p>
+                            <button type="button" class="popup__button-type-choose js-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__content popup__content-clientData">
+                    <p class="popup__text popup__content-text">Ваши контактные данные:</p>
+                    <input name="name" type="text" placeholder="Ваше имя"
+                           class="popup__input-text popup__input-text_type_name" required minlength="2" maxlength="30">
+                    <span class="popup__error popup__error_name">1</span>
+                    <input name="email" type="url" placeholder="Почта"
+                           class="popup__input-text popup__input-text_type_email" required>
+                    <span class="popup__error popup__error_email">1</span>
+                    <input name="tel" type="text" placeholder="Телефон"
+                           class="popup__input-text popup__input-text_type_tel" required minlength="2" maxlength="30">
+                    <span class="popup__error popup__error_tel">1</span>
+                </div>
+                <div class="popup__content-footer">
+                    <p class="popup__agree">Согласен с политикой обработки персональных данных</p>
+                    <button type="submit" class="popup__submit-btn popup__submit-btn_type_place">Создать</button>
+                </div>
+                <input class="popup__input-text" name="adult" type="hidden" placeholder="Взрослый билет" value="">
+                <input class="popup__input-text" name="child" type="hidden" placeholder="Детский билет" value="">
+                <input class="popup__input-text" name="present" type="hidden" placeholder="Подарок" value="">
+                <input class="popup__input-text" name="date" type="hidden" placeholder="Дата" value="">
+            </form>
+        </div>
+    </div>
 
 </div>
 
@@ -799,6 +874,8 @@
 <script src="./assets/js/libs/owl-carousel/owl.carousel.min.js"></script>
 <script type="module" src="./assets/js/src/FormValidator.js"></script>
 <script type="module" src="./assets/js/src/Popup.js"></script>
+<script type="module" src="./assets/js/src/Counter.js"></script>
+<script type="module" src="./assets/js/src/Calendar.js"></script>
 <script type="module" src="./assets/js/src/PopupWithForm.js"></script>
 <script type="module" src="./assets/js/index.js"></script>
 </body>
