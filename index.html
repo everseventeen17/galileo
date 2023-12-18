@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./assets/js/libs/owl-carousel/owl.carousel.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class=""> <!--//overflow-hidden -->
-<!--<div class="preloader">-->
-<!--    <div class="preloader__row">-->
-<!--        <img class="preloader__item" src="./assets/img/header/logo-wheel-1.svg"-->
-<!--             decoding="async"-->
-<!--             alt="wheel-black">-->
-<!--        <img class="preloader__item" src="./assets/img/header/logo-wheel-2.svg"-->
-<!--             decoding="async"-->
-<!--             alt="wheel-red">-->
-<!--    </div>-->
-<!--</div>-->
+<body class="overflow-hidden"> <!--//overflow-hidden -->
+<div class="preloader">
+    <div class="preloader__row">
+        <img class="preloader__item" src="./assets/img/header/logo-wheel-1.svg"
+             decoding="async"
+             alt="wheel-black">
+        <img class="preloader__item" src="./assets/img/header/logo-wheel-2.svg"
+             decoding="async"
+             alt="wheel-red">
+    </div>
+</div>
 <header class="header sticky" id="myHeader">
     <div class="container">
         <div class="header__right-wrapper">
@@ -56,22 +56,22 @@
         <div class="header__wrapper-left">
             <nav class="mobile-menu">
                 <b><p>МЕНЮ</p></b>
-                <a href="#" class="hamburger-wrapper">
+                <a href="#" aria-label="menu" class="hamburger-wrapper">
                     <div class="hamburger-menu"></div>
                 </a>
                 <div class="mobile-menu-overlay">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Our mission</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a aria-label="home" href="#">Home</a></li>
+                        <li><a aria-label="our mission" href="#">Our mission</a></li>
+                        <li><a aria-label="about us" href="#">About us</a></li>
+                        <li><a aria-label="pricing" href="#">Pricing</a></li>
+                        <li><a aria-label="products" href="#">Products</a></li>
+                        <li><a aria-label="contact us" href="#">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="header__telephone-wrapper">
-                <a class="header__telephone" href="#">+7 (383) 312-05-09</a>
+                <a class="header__telephone" aria-label="call us" href="#">+7 (383) 312-05-09</a>
                 <button class="header__btn button js-buyTicket">Купить билет</button>
             </div>
         </div>
@@ -421,8 +421,7 @@
             </div>
 
             <div class="price__inner-wrapper inner-wrapper">
-                <img class="price__img-attention" src="./assets/img/price/attention.svg" alt="attention" width=""
-                     height="" decoding="async">
+                <img class="price__img-attention" src="./assets/img/price/attention.svg" alt="attention" width="51" height="36" decoding="async">
                 <p class="price__text">
                     <b>
                         Перед посещением необходимо ознакомиться с правилами индивидуального
@@ -604,7 +603,7 @@
                 <button class="button">Заказать звонок</button>
             </div>
             <div class="footer__map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.948933019668!2d82.9532244!3d55.0090602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe611977b9e79%3A0x10bd55f7882d2d1f!2z0YPQuy4g0JTQvtCx0YDQvtC70Y7QsdC-0LLQsCwgMTbQkCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDA5!5e0!3m2!1sru!2sru!4v1700058124966!5m2!1sru!2sru"
+                <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.948933019668!2d82.9532244!3d55.0090602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe611977b9e79%3A0x10bd55f7882d2d1f!2z0YPQuy4g0JTQvtCx0YDQvtC70Y7QsdC-0LLQsCwgMTbQkCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDA5!5e0!3m2!1sru!2sru!4v1700058124966!5m2!1sru!2sru"
                         width="100%" height="335" style="border:0;" allowfullscreen=""
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -615,25 +614,25 @@
             <nav class="footer__navigation">
                 <ul class="footer__navigation-list">
                     <li class="footer__navigation-item active-page"><a href="#">Главная</a></li>
-                    <li class="footer__navigation-item"><a href="#">О парке</a></li>
-                    <li class="footer__navigation-item"><a href="#">Лаборатория</a></li>
-                    <li class="footer__navigation-item"><a href="#">Услуги и цены</a></li>
-                    <li class="footer__navigation-item"><a href="#">Для групп</a></li>
-                    <li class="footer__navigation-item"><a href="#">Акции и скидки</a></li>
-                    <li class="footer__navigation-item"><a href="#">Галерея</a></li>
-                    <li class="footer__navigation-item"><a href="#">Контакты</a></li>
+                    <li class="footer__navigation-item"><a aria-label="about" href="#">О парке</a></li>
+                    <li class="footer__navigation-item"><a aria-label="laboratory" href="#">Лаборатория</a></li>
+                    <li class="footer__navigation-item"><a aria-label="prices" href="#">Услуги и цены</a></li>
+                    <li class="footer__navigation-item"><a aria-label="for groups" href="#">Для групп</a></li>
+                    <li class="footer__navigation-item"><a aria-label="sales" href="#">Акции и скидки</a></li>
+                    <li class="footer__navigation-item"><a aria-label="gallery" href="#">Галерея</a></li>
+                    <li class="footer__navigation-item"><a aria-label="contacts" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <div class="footer__stuff">
                 <ul class="footer__rules-list">
-                    <li class="footer__rules-item"><a href="#">Правила индивидуального посещения</a></li>
-                    <li class="footer__rules-item"><a href="#">Правила группового посещения</a></li>
-                    <li class="footer__rules-item"><a href="#">Политика конфиденциальности</a></li>
+                    <li class="footer__rules-item"><a href="#" aria-label="rules">Правила индивидуального посещения</a></li>
+                    <li class="footer__rules-item"><a href="#" aria-label="rules for groups">Правила группового посещения</a></li>
+                    <li class="footer__rules-item"><a href="#" aria-label="confidential">Политика конфиденциальности</a></li>
                 </ul>
                 <div class="footer__socials">
                     <ul class="footer__icons-list">
                         <li class="footer__icons-item">
-                            <a href="#" target="_blank">
+                            <a href="#" aria-label="vk" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
                                      viewBox="0 0 48 48">
                                     <path fill="#1976d2" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
@@ -643,7 +642,7 @@
                             </a>
                         </li>
                         <li class="footer__icons-item">
-                            <a href="#" target="_blank">
+                            <a href="#" aria-label="insta" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
                                      viewBox="0 0 48 48">
                                     <path fill="#304ffe"
@@ -693,7 +692,7 @@
                             </a>
                         </li>
                         <li class="footer__icons-item">
-                            <a href="#" target="_blank">
+                            <a href="#" aria-label="youtube" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
                                      viewBox="0 0 48 48">
                                     <path fill="#FF3D00"
@@ -703,7 +702,7 @@
                             </a>
                         </li>
                         <li class="footer__icons-item">
-                            <a href="#" target="_blank">
+                            <a href="#" aria-label="telegram" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
                                      viewBox="0 0 48 48">
                                     <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>

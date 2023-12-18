@@ -460,7 +460,7 @@ body {
 
 .affiche__content {
     background-color: var(--color-background-accent);
-    background-image: url("/assets/img/affiche/affiche_bg.png");
+    background-image: url("./assets/img/affiche/affiche_bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
